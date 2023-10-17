@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web bán hàng gia dụng</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/logosale.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="nav-address">   
+                <p class="add-first">Giao hàng đến</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">Viet Nam</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option value="">Tất cả</option>
+                </select>
+                <input placeholder="Tìm kiếm" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-signin">
+                <p><span><a href="./account.html">Xin chào, đăng nhập</a></span></p>
+                <p class="nav-second"><a href="./account.html">Tài khoản</a></p>
+            </div>
+            <div class="nav-return">
+                <p><span>Mua sắm</span></p>
+                <p class="nav-second">& Đặt hàng </p>
+            </div>
+            <div class="nav-card">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="nav-second">Giỏ hàng</p>
+            </div>
+        </div>
+            <div class="panel-dropdown">
+                <div class="panel-dropdown-menu">
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i>Trang chủ</a></li>
+                        <li><a href="livingr.html"><i class="fa-solid fa-couch"></i>Gia dụng phòng khách</a>
+                            <ul id="submenu">
+                                <li><a href="livingr.html">Bàn, ghế</a></li>
+                                <li><a href="livingr.html">Kệ tủ</a></li>
+                                <li><a href="livingr.html">Đồ trang trí</a></li>
+                                <li><a href="livingr.html">Đồ gia dụng khác</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="kitchen.html"><i class="fa-solid fa-kitchen-set"></i>Gia dụng phòng bếp</a>
+                            <ul id="submenu">
+                                <li><a href="kitchen.html">Bàn, ghế</a></li>
+                                <li><a href="kitchen.html">Dụng cụ nấu ăn</a></li>
+                                <li><a href="kitchen.html">Kệ, tủ bếp</a></li>
+                                <li><a href="kitchen.html">Đồ gia dụng khác</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="bathr.html"><i class="fa-solid fa-shower"></i>Gia dụng phòng tắm</a>
+                            <ul id="submenu">
+                                <li><a href="bathr.html">Bồn tắm, Bồn rửa mặt</a></li>
+                                <li><a href="bathr.html">Toilet</a></li>
+                                <li><a href="bathr.html">Gương tắm</a></li>
+                                <li><a href="bathr.html">Đồ gia dụng khác</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="bedr.html"><i class="fa-solid fa-bed"></i>Gia dụng phòng ngủ</a>
+                            <ul id="submenu">
+                                <li><a href="bedr.html">Giường</a></li>
+                                <li><a href="bedr.html">Tủ quần áo</a></li>
+                                <li><a href="bedr.html">Đồ trang trí</a></li>
+                                <li><a href="bedr.html">Đồ gia dụng khác</a></li>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-comment"></i>Tin tức</a></li>
+                        <li><a href=""><i class="fa-solid fa-blog"></i>Blog kiến thức</a></li>
+                        <li><a href="./contact.html"><i class="fa-solid fa-phone"></i>Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+    <section class="slider">
+        <div class="container">
+            <div class="slider_content">
+                <div class="slider_content_left">
+                    <div class="slider_content_left_top_container">
+                        <div class="slider_content_left_top">
+                            <a href=""><img src="./img/thanhtruot1.jpg" alt=""></a>
+                            <a href=""><img src="./img/thanhtruot2.jpg" alt=""></a>
+                            <a href=""><img src="./img/thanhtruot3.jpg" alt=""></a>
+                            <a href=""><img src="./img/thanhtruot4.jpg" alt=""></a>
+                            <a href=""><img src="./img/thanhtruot5.jpg" alt=""></a>
+                        </div>
+                        <div class="slider_content_left_top_btn">
+                            <i class="fa fa-angle-left"></i>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="slider_content_left_bottom">
+                        <li class="active">Máy lọc không khí thông minh</li>
+                        <li>Bát đĩa chất lượng cao</li>
+                        <li>Tủ lạnh tiết kiệm điện</li>
+                        <li>Máy pha cà phê tự động</li>
+                        <li>Máy giặt hiện đại</li>
+                    </div>
+                </div>
+                <div class="slider_content_right">
+                    <li><a href=""><img src="./img/slider1.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/slider2.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/slider3.jpg" alt=""></a></li>
+                    <li><a href=""><img src="./img/slider4.jpg" alt=""></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- gia dung phong khach -->
+        <div class="small-container">
+            <h2 class="title">Gia dụng phòng khách</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href=""><img src="./img/phongkhach1-1.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Bộ Bàn Ghế Gỗ Tiếp Khách</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongkhach1-2.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Bộ Bàn Ghế Gỗ Tiếp Khách Cao Cấp</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongkhach1-3.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Bộ Bàn Ghế Tiếp Khách Bọc Vải Nhung Cao Cấp</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongkhach1-4.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Bộ Bàn Ghế Tiếp Khách Cao Cấp</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongkhach1-5.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Ấm Trà Thủy Tinh Có Đế Điện Chịu Nhiệt</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongkhach1-6.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Bình Nước Thủy Tinh Xanh Phong Cách Châu Âu</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongkhach1-7.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Bộ Ấm Trà Sứ Họa Tiết Hươu Bắc Âu</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongkhach1-8.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Bộ Ấm Trà Sứ Xương 15 Món Cao Cấp</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- gia dung phong bep -->
+        <div class="small-container">
+            <h2 class="title">Gia dụng phòng bếp</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href=""><img src="./img/phongbep1-1.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Kệ Bếp Âm Tủ Có Ray Kéo Cao Cấp</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongbep1-2.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Kệ Bếp Đa Năng Để Lò Vi Sóng</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongbep1-3.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Kệ Bếp Thông Minh Điều Khiển Nâng Kéo Tự Động</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongbep1-4.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Kệ Chén Bát Đa Năng Để Trên Bồn Rửa</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongbep1-5.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Kệ Đựng Gia Vị Tiện Dụng</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongbep1-6.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Kệ Đựng Gia Vị Treo Tường Cao Cấp</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongbep1-7.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Kệ Gia Vị Kính Cường Lực 3 Tầng Có Ray Kéo</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongbep1-8.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Kệ Gia Vị Tủ Bếp Dưới Có Ray Kéo</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gia dung phong tam -->
+        <div class="small-container">
+            <h2 class="title">Gia dụng phòng tắm</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href=""><img src="./img/phongtam1-1.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Cây Sen Tắm Đứng Nóng Lạnh Mạ Màu Vàng</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongtam1-2.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Cặp Móc Đơn Inox Treo Đồ Đa Năng</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongtam1-3.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Cầu Thoát Sàn Chắn Rác Trên Ban Công Sân Thượng</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongtam1-4.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Cây Lau Nhà Hơi Nước Đa Năng</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongtam1-5.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Gương Tròn Khung Thép Sơn Tĩnh Điện</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongtam1-6.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Gương Tròn Viền Gỗ Sồi Màu Vàng</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongtam1-7.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Hộp Đựng Giấy Vệ Sinh Hợp Kim Nhôm Gắn Tường HG01</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongtam1-8.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Kệ Để Đồ Đa Năng Có Bánh Xe</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gia dung phong ngu -->
+        <div class="small-container">
+            <h2 class="title">Gia dụng phòng ngủ</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href=""><img src="./img/phongngu1-1.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Giường Da Massage Đa Năng Có Loa Bluetooth, Máy Lọc Không Khí</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongngu1-2.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Giường Da Massage Đa Năng Tatami Có Loa Bluetooth</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongngu1-3.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Giường Tròn Massage Có Loa, Màn Hình LCD</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongngu1-4.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Hệ Thanh Treo Quần Áo Trong Tủ Có Ray Trượt</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongngu1-5.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Khung Treo Quần Áo Bằng Nhựa Đa Năng 5 Lỗ Móc</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongngu1-6.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Tab Đầu Giường Tích Hợp Sạc Không Dây Đèn Led</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongngu1-7.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Thanh Phơi Quần Áo Gắn Tường Gấp Gọn</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href=""><img src="./img/phongngu1-8.jpg" alt=""></a>
+                    <div class="col-4-text">
+                        <h4><a href="">Thanh Treo Quần Áo Có Tay Kéo</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>1.500.000 VNĐ</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- offer -->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="img/exclusive.png" class="offer-img">
+                    </div>
+                    <div class="col-2">
+                        <h1>Smart Band 4</h1>
+                        <small>Sáng tạo, năng động, khỏe mạnh với Mi Band 4. Hãy lăn chuột để cùng khám phá những cải tiến đột phá của chiếc vòng tay thông minh Xiaomi rẻ mà chất lượng này</small>
+                        <a href="" class="btn">Buy Now &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Tải xuống ứng dụng</h3>
+                        <p>Tải xuống ứng dụng cho hệ điều hành Android và IOS trên điện thoại</p>
+                        <div class="app-logo">
+                            <img src="img/play-store.png">
+                            <img src="img/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Mạng xã hội</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Zalo</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Hỗ trợ</h3>
+                        <ul style="line-height: 1.5;">
+                            <li>Điện thoại: 0123456789</li>
+                            <li>Mail: dev@gmail.com</li>
+                            <li>Địa chỉ: Đại học Phenikaa</li>
+                            <li>Fanpage: Dev.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>&copy; Design by <span>MinhHao, GiangHoang</span></p>
+            </div>
+        </div>
+        <script src="./js/script.js"></script>
+</body>
+</html>
